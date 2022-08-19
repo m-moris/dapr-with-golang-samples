@@ -1,0 +1,20 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"appId": "state2",
+			"appPort": 5005,
+			"label": "dapr-debug",
+			"type": "dapr",
+			"grpcPort": 50001,
+			"httpPort": 3006,
+			
+			"componentsPath": "state2/config",
+		},
+		{
+			"appId": "state2",
+			"label": "daprd-down",
+			"type": "daprd-down"
+		}
+	]
+}
