@@ -1,0 +1,20 @@
+apiVersion: dapr.io/v1alpha1
+kind: Component
+metadata:
+  name: <NAME>
+spec:
+  type: bindings.azure.storagequeues
+  version: v1
+  metadata:
+  - name: storageAccount
+    value: "devstoreaccount1"
+  - name: storageAccessKey
+    value: "Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw=="
+  - name: queue
+    value: "myqueue"
+  - name: ttlInSeconds
+    value: "60"
+  - name: decodeBase64
+    value: "false"
+  - name: queueEndpointUrl
+    value: "http://127.0.0.1:10001/devstoreaccount1"
